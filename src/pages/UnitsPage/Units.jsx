@@ -1,12 +1,12 @@
 import React from 'react'
-import './Home.css'
+import './Units.css'
 
-const Home = () => {
+const Units = () => {
   return (
     <div className='home'>
-      Home Page
+      Units Page
     </div>
   )
 }
 
-export default Home
+export default Units

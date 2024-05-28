@@ -1,0 +1,17 @@
+:root {
+  /* Background */
+  --bg-primary: #282c34; /* Dark background */
+  --bg-secondary: #1e2127; /* Slightly lighter background */
+  
+  /* Text */
+  --text-primary: #abb2bf; /* Main text color */
+  --text-secondary: #5c6370; /* Secondary text color */
+  
+  /* Accent Colors */
+  --accent-blue: #61afef; /* Blue accent */
+  --accent-green: #98c379; /* Green accent */
+  --accent-yellow: #e5c07b; /* Yellow accent */
+  --accent-orange: #d19a66; /* Orange accent */
+  --accent-red: #e06c75; /* Red accent */
+  --accent-purple: #c678dd; /* Purple accent */
+}

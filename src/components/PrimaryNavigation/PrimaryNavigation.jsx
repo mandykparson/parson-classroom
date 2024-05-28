@@ -1,38 +1,23 @@
-import React from 'react'
-import classNames from 'classnames'
-import For from '../For/For'
-import { NavLink } from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Container } from 'react-bootstrap';
+import './PrimaryNavigation.css';
 
-const PrimaryNavigation = ({ items }) => {
-  console.log("🚀 ~ items:", items)
+function PrimaryNavigation() {
   return (
-    <nav>
-    	<ul>
-      	<For each={items}>
-        	{
-          	({ title, to }) => (
-            	<li key={title}>
-              	<NavLink
-              	className={
-                	({ isActive }) => classNames([
-                  	'd-flex align-items-start flex-grow-0 text-decoration-none text-uppcase py-2 px-0 text-white primary-navigation_item border-bottom border-4',
-                  	{
-                    	'border-pink ': isActive
-                  	}
-                	])
-              	}
-              	to={to}
-              	>
-              	<span className="primary-navigation_badge flex-grow-0">{title}</span>
-              	</NavLink>
-            	</li>
-            )
-        	}
-      	</For>
-    	</ul>
-  	</nav>
-  )
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="/">Mrs. Parson's Classroom</Navbar.Brand>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/units">Units</Nav.Link>
+            <Nav.Link href="/resources">Resources</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-
-export default PrimaryNavigation
+export default PrimaryNavigation;
